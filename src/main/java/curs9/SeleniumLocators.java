@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -18,7 +19,7 @@ public class SeleniumLocators {
 	@BeforeClass //adica sa ruleze inaintea tuturor claselor adnotate cu @Test
 	public void setup() {
 				
-		driver = new ChromeDriver();
+		driver = new EdgeDriver();
 		driver.get("https://keybooks.ro/");
 	}
 	
