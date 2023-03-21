@@ -15,12 +15,12 @@ public class FirstScript {
 	
 	@BeforeClass //adica sa ruleze inaintea tuturor claselor adnotate cu @Test
 	public void setup() {
-		//daca vreau Chrome care are err datorita updateurilor
+		//daca vreau Chrome care are err datorita updateurilor:		
 				//ChromeOptions chOpt = new ChromeOptions();
 				//chOpt.addArguments("--remote-allow-origins=*");
-				//WebDriver chrome = new ChromeDriver(chOpt);
-				
+				//driver =  new ChromeDriver(chOpt);
 		driver = new EdgeDriver();
+		
 		driver.get("https://keybooks.ro/");	
 	}	
 	

@@ -16,6 +16,11 @@ public  WebDriver driver;
 	@BeforeClass 
 	public void setup() {
 		
+		/* pt ultima vesiune 111.0.5563.65 de Chrome:
+		ChromeOptions chOpt = new ChromeOptions();
+		chOpt.addArguments("--remote-allow-origins=*");
+		driver =  new ChromeDriver(chOpt);
+		*/
 		driver = new EdgeDriver();
 		driver.get("https://keybooks.ro/");
 		
