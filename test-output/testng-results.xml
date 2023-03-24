@@ -1,33 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-23T21:38:44 EET" name="Default suite" finished-at="2023-03-23T21:39:05 EET" duration-ms="21294">
+  <suite started-at="2023-03-24T17:58:20 EET" name="Default suite" finished-at="2023-03-24T17:58:34 EET" duration-ms="13898">
     <groups>
     </groups>
-    <test started-at="2023-03-23T21:38:44 EET" name="Default test" finished-at="2023-03-23T21:39:05 EET" duration-ms="21294">
-      <class name="curs10.SeleniumLocators2">
-        <test-method is-config="true" signature="setup()[pri:0, instance:curs10.SeleniumLocators2@333291e3]" started-at="2023-03-23T21:38:44 EET" name="setup" finished-at="2023-03-23T21:38:54 EET" duration-ms="10047" status="PASS">
+    <test started-at="2023-03-24T17:58:20 EET" name="Default test" finished-at="2023-03-24T17:58:34 EET" duration-ms="13898">
+      <class name="curs10.FindElements">
+        <test-method is-config="true" signature="setup()[pri:0, instance:curs10.FindElements@1ab3a8c8]" started-at="2023-03-24T17:58:20 EET" name="setup" finished-at="2023-03-24T17:58:28 EET" duration-ms="7415" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="idLocator()[pri:1, instance:curs10.SeleniumLocators2@333291e3]" started-at="2023-03-23T21:38:54 EET" name="idLocator" finished-at="2023-03-23T21:38:58 EET" duration-ms="4373" status="PASS">
+        <test-method signature="findElements()[pri:0, instance:curs10.FindElements@1ab3a8c8]" started-at="2023-03-24T17:58:28 EET" name="findElements" finished-at="2023-03-24T17:58:29 EET" duration-ms="813" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- idLocator -->
-        <test-method signature="cssLocator()[pri:2, instance:curs10.SeleniumLocators2@333291e3]" started-at="2023-03-23T21:38:59 EET" name="cssLocator" finished-at="2023-03-23T21:38:59 EET" duration-ms="484" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cssLocator -->
-        <test-method signature="xpathLocator()[pri:3, instance:curs10.SeleniumLocators2@333291e3]" started-at="2023-03-23T21:38:59 EET" name="xpathLocator" finished-at="2023-03-23T21:38:59 EET" duration-ms="446" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- xpathLocator -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:curs10.SeleniumLocators2@333291e3]" started-at="2023-03-23T21:38:59 EET" name="tearDown" finished-at="2023-03-23T21:39:05 EET" duration-ms="5828" status="PASS">
+        </test-method> <!-- findElements -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:curs10.FindElements@1ab3a8c8]" started-at="2023-03-24T17:58:29 EET" name="tearDown" finished-at="2023-03-24T17:58:34 EET" duration-ms="5624" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- curs10.SeleniumLocators2 -->
+      </class> <!-- curs10.FindElements -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
