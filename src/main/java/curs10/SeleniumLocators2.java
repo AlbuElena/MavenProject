@@ -4,7 +4,6 @@ import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.By.ByXPath;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
@@ -32,7 +31,7 @@ public class SeleniumLocators2 extends BaseTest {
 	public void xpathLocator() {
 		WebElement emailInputField = driver.findElement(By.xpath("//input[@name=\"your-email\"]"));
 		assertTrue(emailInputField.isDisplayed());
-		emailInputField.sendKeys("jdb@)abc.com");
+		emailInputField.sendKeys("jdb@abc.com");
 		
 		
 		

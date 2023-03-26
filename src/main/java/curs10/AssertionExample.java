@@ -18,8 +18,8 @@ public class AssertionExample {
 		}
 	}
 
-@Test
-public void checkTitle2() {
-	assertEquals(expectedTitle, actualTitle);
-	}
+	@Test
+	public void checkTitle2() {
+		assertEquals(expectedTitle, actualTitle);
+		}
 }
