@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="curs10.Homework2">
+      <class name="curs11.JSAlertExample">
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="checkBook"/>
+          <include name="simpleJsAlert"/>
         </methods>
-      </class> <!-- curs10.Homework2 -->
+      </class> <!-- curs11.JSAlertExample -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
