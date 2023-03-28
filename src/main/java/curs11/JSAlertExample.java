@@ -15,19 +15,18 @@ public class JSAlertExample extends BaseTest{
 	@Test
 	public void simpleJsAlert() throws InterruptedException {
 		
-		driver.get("https://the-internet.herokuapp.com/javascript_alerts");
+			driver.get("https://the-internet.herokuapp.com/javascript_alerts");
 		
-		driver.findElement(By.cssSelector("button[onclick*=\"jsAle\"]")).click();
-				Thread.sleep(3000);
-				driver.switchTo();
+			driver.findElement(By.cssSelector("button[onclick*=\"jsAle\"]")).click();
+			Thread.sleep(3000);	
 				
-				//driver.switchTo().alert().accept(); -- face switch catre alerta popup si accept apasa bttn ok, iar dismiss da click pe cancel
+			//driver.switchTo().alert().accept(); -- face switch catre alerta popup si accept apasa bttn ok, iar dismiss da click pe cancel
 				
-				Alert alertJs = driver.switchTo().alert();
-				alertJs.accept();
+			Alert alertJs = driver.switchTo().alert();
+			alertJs.accept();
 				
-				WebElement result = driver.findElement(By.cssSelector("p[id='result']"));
-				assertEquals(result.getText(), "You successfully clicked an alert");
+			WebElement result = driver.findElement(By.cssSelector("p[id='result']"));
+			assertEquals(result.getText(), "You successfully clicked an alert");
 				
 				
 	}
