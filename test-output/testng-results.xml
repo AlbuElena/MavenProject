@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-27T09:51:35 EEST" name="Default suite" finished-at="2023-03-27T09:51:49 EEST" duration-ms="14212">
+  <suite started-at="2023-03-30T21:28:02 EEST" name="Default suite" finished-at="2023-03-30T21:28:20 EEST" duration-ms="18298">
     <groups>
     </groups>
-    <test started-at="2023-03-27T09:51:35 EEST" name="Default test" finished-at="2023-03-27T09:51:49 EEST" duration-ms="14212">
-      <class name="curs10.Homework2">
-        <test-method is-config="true" signature="setup()[pri:0, instance:curs10.Homework2@1ab3a8c8]" started-at="2023-03-27T09:51:35 EEST" name="setup" finished-at="2023-03-27T09:51:43 EEST" duration-ms="7454" status="PASS">
+    <test started-at="2023-03-30T21:28:02 EEST" name="Default test" finished-at="2023-03-30T21:28:20 EEST" duration-ms="18298">
+      <class name="tests.LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest@1ab3a8c8]" started-at="2023-03-30T21:28:02 EEST" name="setup" finished-at="2023-03-30T21:28:10 EEST" duration-ms="8857" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="checkBook()[pri:0, instance:curs10.Homework2@1ab3a8c8]" started-at="2023-03-27T09:51:43 EEST" name="checkBook" finished-at="2023-03-27T09:51:44 EEST" duration-ms="1106" status="PASS">
+        <test-method signature="loginTest()[pri:0, instance:tests.LoginTest@1ab3a8c8]" started-at="2023-03-30T21:28:10 EEST" name="loginTest" finished-at="2023-03-30T21:28:14 EEST" duration-ms="3195" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkBook -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:curs10.Homework2@1ab3a8c8]" started-at="2023-03-27T09:51:44 EEST" name="tearDown" finished-at="2023-03-27T09:51:49 EEST" duration-ms="5609" status="PASS">
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@1ab3a8c8]" started-at="2023-03-30T21:28:14 EEST" name="tearDown" finished-at="2023-03-30T21:28:20 EEST" duration-ms="6152" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- curs10.Homework2 -->
+      </class> <!-- tests.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
