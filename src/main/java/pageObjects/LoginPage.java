@@ -22,7 +22,8 @@ public class LoginPage {
 		driver.findElement(password).sendKeys(pass);
 		driver.findElement(loginButton).click();
 	}
-		
+	
+	
 	public boolean successMsgisDisplayed() {
 			return driver.findElement(successMessage).isDisplayed();
 	}
