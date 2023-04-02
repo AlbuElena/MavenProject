@@ -14,7 +14,7 @@ public class TestPriority {
 	public void two() {
 		System.out.println("2");
 	}
-	
+	// sss
 	@Test(priority = 2)
 	public void three() {
 		System.out.println("3");
