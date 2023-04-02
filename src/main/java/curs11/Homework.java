@@ -29,11 +29,11 @@ public class Homework extends BaseTest{
 		for(int i=0; i<3; i++) { // i = 3 este numarul de stelute pe care vreau eu sa il selectez
 			stars.get(i).click();
 			}
-<<<<<<< HEAD
+
 		driver.findElement(By.cssSelector("textarea[id='comment']")).sendKeys("this is my comment512");
-=======
+
 		driver.findElement(By.cssSelector("textarea[id='comment']")).sendKeys("this is my comment5");
->>>>>>> 39a65d7f8ed457782a80b4eaf5afb33ab4441e60
+
 		driver.findElement(By.cssSelector("input[id = 'author']")).sendKeys("this is my name");
 		driver.findElement(By.cssSelector("input[id = 'email']")).sendKeys("my@email.com");
 		driver.findElement(By.cssSelector("p[class*='cook']>input[id='wp-comment-cookies-consent']")).click();
@@ -42,19 +42,7 @@ public class Homework extends BaseTest{
 		driver.findElement(By.cssSelector("em[class *= 'awaiting-approval']")).isDisplayed();
 		
 		
-		
-<<<<<<< HEAD
 	}
-	
-	
-	
-	
-=======
-		
-		
-		
-	
-	}
->>>>>>> 39a65d7f8ed457782a80b4eaf5afb33ab4441e60
+
 
 }

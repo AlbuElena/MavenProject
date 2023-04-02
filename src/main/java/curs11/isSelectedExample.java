@@ -20,12 +20,9 @@ public class isSelectedExample extends BaseTest{
 		//System.out.println(rememberMe.isSelected());
 		assertTrue(rememberMe.isSelected());
 		
-		
 	}
-	
 
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 39a65d7f8ed457782a80b4eaf5afb33ab4441e60
+
+
+
