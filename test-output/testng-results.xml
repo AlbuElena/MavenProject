@@ -2,6 +2,7 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2023-03-30T21:28:02 EEST" name="Default suite" finished-at="2023-03-30T21:28:20 EEST" duration-ms="18298">
     <groups>
     </groups>
@@ -20,6 +21,26 @@
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.LoginTest -->
+=======
+  <suite started-at="2023-03-28T17:29:51 EEST" name="Default suite" finished-at="2023-03-28T17:30:04 EEST" duration-ms="12604">
+    <groups>
+    </groups>
+    <test started-at="2023-03-28T17:29:51 EEST" name="Default test" finished-at="2023-03-28T17:30:04 EEST" duration-ms="12604">
+      <class name="curs11.Homework">
+        <test-method is-config="true" signature="setup()[pri:0, instance:curs11.Homework@1ab3a8c8]" started-at="2023-03-28T17:29:51 EEST" name="setup" finished-at="2023-03-28T17:29:56 EEST" duration-ms="4583" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="tema()[pri:0, instance:curs11.Homework@1ab3a8c8]" started-at="2023-03-28T17:29:56 EEST" name="tema" finished-at="2023-03-28T17:29:58 EEST" duration-ms="2496" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tema -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:curs11.Homework@1ab3a8c8]" started-at="2023-03-28T17:29:58 EEST" name="tearDown" finished-at="2023-03-28T17:30:04 EEST" duration-ms="5478" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- curs11.Homework -->
+>>>>>>> 39a65d7f8ed457782a80b4eaf5afb33ab4441e60
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

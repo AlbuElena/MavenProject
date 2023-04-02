@@ -30,6 +30,7 @@ public class JSAlertExample extends BaseTest{
 				
 				
 	}
+<<<<<<< HEAD
 	
 	@Test
 	public void confirmJsAlert() throws InterruptedException {
@@ -62,3 +63,6 @@ driver.get("https://the-internet.herokuapp.com/javascript_alerts");
 	
 	
 }
+=======
+}
+>>>>>>> 39a65d7f8ed457782a80b4eaf5afb33ab4441e60

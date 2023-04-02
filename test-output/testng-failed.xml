@@ -3,6 +3,7 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="curs12.ImplicitWait">
         <methods>
           <include name="setup"/>
@@ -10,6 +11,15 @@
           <include name="testWait"/>
         </methods>
       </class> <!-- curs12.ImplicitWait -->
+=======
+      <class name="curs11.Homework">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="xxx"/>
+        </methods>
+      </class> <!-- curs11.Homework -->
+>>>>>>> 39a65d7f8ed457782a80b4eaf5afb33ab4441e60
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
