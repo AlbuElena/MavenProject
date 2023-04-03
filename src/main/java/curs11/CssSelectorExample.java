@@ -24,9 +24,9 @@ public class CssSelectorExample extends BaseTest {
 		jse.executeScript("arguments[0].setAttribute('style', 'background:orange; border:4px solid red;')", loginMenu);
 			
 		// . --> este referinta catre atributul class
-		//.logo_slogan --> cauta orice element care are calss = logo_slogan
-		//div.logo_slogan --> cauta orice element DIV care are calss = logo_slogan
-		//div[class="logo_slogan"] --> cauta orice element DIV care are calss = logo_slogan
+		//.logo_slogan --> cauta orice element care are class = logo_slogan
+		//div.logo_slogan --> cauta orice element DIV care are class = logo_slogan
+		//div[class="logo_slogan"] --> cauta orice element DIV care are class = logo_slogan
 		
 		WebElement logo = driver.findElement(By.cssSelector("div.logo_slogan"));
 		jse.executeScript("arguments[0].setAttribute('style', 'background:orange; border:4px solid red;')", logo);
