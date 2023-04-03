@@ -10,6 +10,7 @@ import java.util.Properties;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class ContactsPage {
 	
@@ -23,6 +24,22 @@ public class ContactsPage {
 	public By Mail = By.cssSelector("span[class *= 'email']>input");
 	public By Subject = By.cssSelector("span[class *= ' your-s']>input");
 	public By Message = By.cssSelector("span[class*='message']>textarea");
+	
+	public By zoomOutButton = By.cssSelector("button[title = 'Zoom out']");
+	public By iframe = By.tagName("iframe");
+	public By outsideMap = By.partialLinkText("map");
+	
+	
+	public void zoomMap(By locator) {
+		WebElement iFrame = driver.findElement(iframe);
+		driver.switchTo().frame(iFrame);
+		driver.findElement(locator).click();
+		
+	}
+	
+	public void redirectMap() {
+		driver.findElement(outsideMap).click();
+	}
 	
 	public void writePropertiesFile() throws IOException {
 		try {

@@ -19,6 +19,7 @@ public class MenuPage {
 	//locator pt ex1 din tema:
 	public By singleAuthorLink = By.linkText("SINGLE AUTHOR");
 	public By searchField = By.cssSelector("button[title = 'Open search']");
+	public By shopLink = By.linkText("BOOKS");
 	
 	//driver.findElement(By.linkText("Login")).click();
 	// indentificare element                  + actiune pe element
