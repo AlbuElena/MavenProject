@@ -18,6 +18,7 @@ public class MenuPage {
 	public By contactsLink = By.linkText("CONTACTS");
 	//locator pt ex1 din tema:
 	public By singleAuthorLink = By.linkText("SINGLE AUTHOR");
+	public By searchField = By.cssSelector("button[title = 'Open search']");
 	
 	//driver.findElement(By.linkText("Login")).click();
 	// indentificare element                  + actiune pe element
