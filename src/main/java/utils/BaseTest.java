@@ -2,7 +2,6 @@ package utils;
 
 import java.io.File;
 import java.io.IOException;
-
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
@@ -25,7 +24,11 @@ public  WebDriver driver;
 	
 	@BeforeClass 
 	public void setup() {
-				
+		
+		//ChromeOptions chOpt = new ChromeOptions();
+		//chOpt.addArguments("--remote-allow-origins=*");
+		//driver =  new ChromeDriver(chOpt);
+		//driver = new EdgeDriver();
 		driver = new FirefoxDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));

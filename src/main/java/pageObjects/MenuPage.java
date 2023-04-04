@@ -16,7 +16,7 @@ public class MenuPage {
 	public By loginLink = By.linkText("Login");
 	//mai fac un locator:
 	public By contactsLink = By.linkText("CONTACTS");
-	//locator pt ex1 din tema:
+	//locatori pt ex1,2,3 din tema:
 	public By singleAuthorLink = By.linkText("SINGLE AUTHOR");
 	public By searchField = By.cssSelector("button[title = 'Open search']");
 	public By shopLink = By.linkText("BOOKS");
