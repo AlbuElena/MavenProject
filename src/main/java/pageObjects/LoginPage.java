@@ -17,10 +17,18 @@ public class LoginPage {
 	public By loginButton = By.cssSelector("input[class='submit_button']");
 	public By successMessage = By.cssSelector("div[class*='sc_infobox_style_success']");
 	
+	public By closepopup = By.cssSelector("a[class = 'popup_close'");
+	
 	public void loginInApp (String user, String pass) {
+		driver.findElement(username).clear();	
 		driver.findElement(username).sendKeys(user);
+		driver.findElement(password).clear();
 		driver.findElement(password).sendKeys(pass);
 		driver.findElement(loginButton).click();
+	}
+	
+	public void closeloginPopup() {
+		driver.findElement(closepopup).click();
 	}
 	
 	

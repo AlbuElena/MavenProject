@@ -28,7 +28,10 @@ public class MenuPage {
 	public By shopLink = By.linkText("BOOKS");
 	public By addresses = By.cssSelector("li[class *= 'address']>a");
 	public By shippingAddress = By.cssSelector("a[href *= 'shipping']");
-		
+
+	public By logoutButton = By.cssSelector("li[class = 'menu_user_logout']>a");
+	public By blogLink = By.linkText("BLOG");
+	public By postFormatsLink = By.linkText("Post Formats");
 
 	
 	//driver.findElement(By.linkText("Login")).click();
@@ -38,8 +41,18 @@ public class MenuPage {
 	//driver.findElement(locator) =>> daca locator == loginLink, pot face:
 	//driver.findElement(loginLink)
 	
+	public void hoverElement(By locator) {
+		WebElement element = driver.findElement(locator);
+		Actions action = new Actions(driver);
+		action.moveToElement(element).perform();
+	}
+	
 	public void navigateTo(By locator) {
 		driver.findElement(locator).click();
+	}
+	
+	public void logoutFromApp() {
+		driver.findElement(logoutButton).click();
 	}
 		
 	public void hoverUserName() {
