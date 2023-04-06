@@ -10,7 +10,7 @@ import utils.BaseTest;
 
 public class DropdownExample extends BaseTest {
 	
-	//@Test
+	@Test
 	public void selectByValueTest() {
 		MenuPage menu = new MenuPage(driver);
 		ShopPage shop = new ShopPage(driver);
@@ -32,7 +32,7 @@ public class DropdownExample extends BaseTest {
 	}
 	
 	
-	@Test
+	//@Test
 	public void selectByVisibleText() {
 		MenuPage menu = new MenuPage(driver);
 		ShopPage shop = new ShopPage(driver);
