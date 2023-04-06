@@ -2,13 +2,11 @@ package tests;
 
 import static org.testng.Assert.assertTrue;
 
-import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
 import pageObjects.LoginPage;
 import pageObjects.MenuPage;
 import pageObjects.ShippingPage;
-import pageObjects.ShopPage;
 import utils.BaseTest;
 
 public class Homework1Curs13 extends BaseTest {
@@ -36,7 +34,7 @@ public class Homework1Curs13 extends BaseTest {
 	public void ShippingAddresses() {
 		
 		ShippingPage address= new ShippingPage(driver);	
-		address.selectByValue("AF");
+		address.selectByVisibleText("AF");
 	}
 	
 	

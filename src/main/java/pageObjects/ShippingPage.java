@@ -17,9 +17,9 @@ public WebDriver driver;
 		this.driver = driver;
 	}
 	
-	public By countryDropdown = By.name("shipping_country");
+	public By countryDropdown = By.id("shipping_country");
 	
-	public void selectByValue(String value) {
+	public void selectByVisibleText(String value) {
 		/*
 		WebElement element = driver.findElement(countryDropdown);
 		((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", element);
@@ -28,9 +28,9 @@ public WebDriver driver;
 		WebElement countryRegionDropdown = driver.findElement(countryDropdown);
 		Select selectObj = new Select(countryRegionDropdown); 
 		
-		countryRegionDropdown = WebDriverWait(driver, 10).until(driver.findElement(By.cssSelector("select[id='shipping_country']//options[contains(., 'AF')]")));
-		
-		selectObj.selectByValue(value);		
+		//countryRegionDropdown = WebDriverWait(driver, 10).until(driver.findElement(By.cssSelector("select[id='shipping_country']//options[contains(., 'AF')]")));
+	
+		selectObj.selectByVisibleText(value);		
 	}
 	
 
