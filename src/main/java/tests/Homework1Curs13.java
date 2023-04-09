@@ -29,7 +29,6 @@ public class Homework1Curs13 extends BaseTest {
 		menu.selectShippingAddress(menu.shippingAddress);
 	}
 	
-	
 	@Test (priority = 3)
 	public void ShippingAddresses() {
 		
