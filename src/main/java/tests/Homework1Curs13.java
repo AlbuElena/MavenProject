@@ -34,7 +34,13 @@ public class Homework1Curs13 extends BaseTest {
 	public void ShippingAddresses() {
 		
 		ShippingPage address= new ShippingPage(driver);	
-		address.selectByVisibleText("AF");
+		address.selectByIndex(41);				
+		assertTrue(address.countryCanadaIsDisplayed());
+		
+		address.scrollDownByVisibilityOfProvince();
+		address.selectByValue("NL");
+		assertTrue(address.provinceNLIsDisplayed());
+	
 	}
 	
 	

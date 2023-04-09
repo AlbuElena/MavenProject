@@ -54,7 +54,8 @@ public class MenuPage {
 	public void logoutFromApp() {
 		driver.findElement(logoutButton).click();
 	}
-		
+	
+	//hover and click scris de mine pt tema 1 curs 13
 	public void hoverUserName() {
 	    WebElement  userName = driver.findElement(By.cssSelector("span[class= 'user_name']"));
 	    WebElement shippingLink = driver.findElement(By.cssSelector("a[href *='wp-admin']"));
