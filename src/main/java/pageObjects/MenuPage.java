@@ -1,13 +1,13 @@
 package pageObjects;
 
 import java.time.Duration;
+import java.util.ArrayList;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.By.ByCssSelector;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class MenuPage {
 	
@@ -28,10 +28,15 @@ public class MenuPage {
 	public By shopLink = By.linkText("BOOKS");
 	public By addresses = By.cssSelector("li[class *= 'address']>a");
 	public By shippingAddress = By.cssSelector("a[href *= 'shipping']");
+	
+	public By facebookLink = By.cssSelector("div[class = 'top_panel_top_socials'] a[href ='https://www.facebook.com/keytraining.ro']");
+	public By twitterLink = By.cssSelector("div[class = 'top_panel_top_socials'] a[href ='https://twitter.com/']");
+	public By instaLink = By.cssSelector("div[class = 'top_panel_top_socials'] a[href = 'https://www.instagram.com']");
 
 	public By logoutButton = By.cssSelector("li[class = 'menu_user_logout']>a");
 	public By blogLink = By.linkText("BLOG");
 	public By postFormatsLink = By.linkText("Post Formats");
+	
 
 	
 	//driver.findElement(By.linkText("Login")).click();
@@ -63,7 +68,6 @@ public class MenuPage {
 		action.moveToElement(userName).perform(); 
 		action.moveToElement(userName).click().build().perform();	
 		action.moveToElement(shippingLink).click().build().perform();		
-
 	}
 	
 	public void selectAddresses(By locator) {
@@ -73,5 +77,5 @@ public class MenuPage {
 	public void selectShippingAddress(By locator) {
 		driver.findElement(locator).click();
 	}
-	
+		
 }
