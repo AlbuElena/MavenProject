@@ -19,6 +19,8 @@ public class ShopPage {
 	public By sliderFinalPosition = By.cssSelector("span[style = 'left: 100%;']");
 	public By booksByPrice = By.cssSelector("li[class *= 'column-1_4'] bdi");
 	
+	public By addToCartButton = By.linkText("ADD TO CART");
+
 	public void dragAndDrop(By locator, int x, int y) {
 		WebElement element = driver.findElement(locator);
 		Actions action = new Actions(driver);

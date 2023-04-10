@@ -25,6 +25,10 @@ public class MenuPage {
 	//locatori pt ex1,2,3 din tema:
 	public By singleAuthorLink = By.linkText("SINGLE AUTHOR");
 	public By searchField = By.cssSelector("button[title = 'Open search']");
+	public By searchIcon = By.cssSelector("button[class*='search_submit']");
+	public By searchField2 =  By.cssSelector("input[class='search_field']");
+	
+	
 	public By shopLink = By.linkText("BOOKS");
 	
 	public By addresses = By.cssSelector("li[class *= 'address']>a");

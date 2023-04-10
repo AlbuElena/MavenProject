@@ -20,7 +20,7 @@ public class ContactsPage {
 		this.driver = driver;
 	}
 	
-	public By Name = By.cssSelector("span[class *= 'name']>input");
+	public By Name = By.cssSelector("input[name= 'your-name']");//nameField era mai ok
 	public By Mail = By.cssSelector("span[class *= 'email']>input");
 	public By Subject = By.cssSelector("span[class *= ' your-s']>input");
 	public By Message = By.cssSelector("span[class*='message']>textarea");

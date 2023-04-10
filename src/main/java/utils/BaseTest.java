@@ -20,7 +20,8 @@ import com.google.common.io.Files;
 
 public class BaseTest {
 	
-public  WebDriver driver;		
+public static WebDriver driver;	
+public BasePage app;
 	
 	@BeforeClass 
 	public void setup() {
@@ -33,6 +34,9 @@ public  WebDriver driver;
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://keybooks.ro/");
+		//driver.get("https://the-internet.hero
+		
+		app = new BasePage();
 	}
 	
 	@AfterClass
