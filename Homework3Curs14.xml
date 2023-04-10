@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Suite1" verbose="1" >
+  <test name="Orice nume vrei" >
+	  
+	<parameter name="The forest" value="https://keybooks.ro/shop/the-forest/"/>
+	<parameter name ="The son" value="https://keybooks.ro/shop/the-son/"/> 
+	<parameter name ="Life in the garden" value="https://keybooks.ro/shop/life-in-the-garden/"/> 
+	<parameter name ="The long road to the deep Silence" value="https://keybooks.ro/shop/the-long-road-to-the-deep-silence/"/> 
+	<parameter name ="It’s a really strange story" value="https://keybooks.ro/shop/its-a-really-strange-story/"/> 
+	<parameter name ="Storm" value="https://keybooks.ro/shop/storm/"> 	</parameter>
+	
+    <classes>
+       <class name="tests.LoginTest" />  
+    </classes>
+  </test>
+</suite>

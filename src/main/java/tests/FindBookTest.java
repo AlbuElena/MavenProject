@@ -1,5 +1,6 @@
 package tests;
 
+import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 import java.time.Duration;
@@ -31,11 +32,13 @@ public class FindBookTest extends BaseTest{
 		
 		//assertTrue(book.findBook());
 		book.clicktheBook();
-		book.checkBookUrl();
+		//book.checkBookUrl();
+		assertEquals(book.checkBookUrl(), "https://keybooks.ro/shop/the-story-about-me/");
 		book.addToCart();
 		assertTrue(book.responseAddToCartIsDisplayed());
 		book.pressViewCart();
-		book.checkViewCartUrl();
+		//book.checkViewCartUrl();
+		assertEquals(book.checkViewCartUrl(), "https://keybooks.ro/cart/");
 		
 	}
 		
@@ -51,7 +54,9 @@ public class FindBookTest extends BaseTest{
 		CheckoutPage checkout = new CheckoutPage(driver);
 		checkout.checkCheckoutUrl();
 		checkout.billingDetailIsDisplayed();
+		assertTrue(checkout.billingDetailIsDisplayed());
 		checkout.additionalInfoIsDisplayed();
+		assertTrue(checkout.additionalInfoIsDisplayed());
 		
 		
 	}

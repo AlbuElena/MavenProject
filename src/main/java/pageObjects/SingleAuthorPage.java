@@ -1,7 +1,11 @@
 package pageObjects;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class SingleAuthorPage {
 	
@@ -15,16 +19,11 @@ public class SingleAuthorPage {
 		this.driver = driver;		
 	}
 	
-	public boolean dramaSkill() {
-		return driver.findElement(drama).isDisplayed();
+	public boolean checkSkill(By locator, String text) {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10)); 
+	    return wait.until(ExpectedConditions.textToBePresentInElementLocated((locator), text));
 	}
 	
-	public boolean biography() {
-		return driver.findElement(biography).isDisplayed();
-	}
 	
-	public boolean cookbooks() {
-		return driver.findElement(cookbooks).isDisplayed();
-	}
 
 }

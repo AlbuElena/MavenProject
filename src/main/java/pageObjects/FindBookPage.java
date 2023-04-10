@@ -58,8 +58,9 @@ public class FindBookPage {
 		driver.findElement(displayedBook).click();
 	}
 	
-	public void checkBookUrl() {
-		assertEquals(driver.getCurrentUrl(), "https://keybooks.ro/shop/the-story-about-me/");
+	public String checkBookUrl() {
+		//assertEquals(driver.getCurrentUrl(), "https://keybooks.ro/shop/the-story-about-me/");
+		return driver.getCurrentUrl();
 	}
 	
 	public void addToCart() {
@@ -74,8 +75,9 @@ public class FindBookPage {
 		driver.findElement(viewCart).click();
 	}
 	
-	public void checkViewCartUrl() {
-		assertEquals(driver.getCurrentUrl(), "https://keybooks.ro/cart/");
+	public String checkViewCartUrl() {
+		//assertEquals(driver.getCurrentUrl(), "https://keybooks.ro/cart/"); assert tb sa fie doar in clasele de test
+		return driver.getCurrentUrl();
 	}
 			
 		

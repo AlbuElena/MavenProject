@@ -19,7 +19,7 @@ public class ActionClassExample extends BaseTest {
 		JavascriptExecutor jse = (JavascriptExecutor)driver;
 		jse.executeScript("window,scrollBy(0, 500)");
 		shop.dragAndDrop(shop.sliderinitialPosition, 75, 0);
-		shop.dragAndDrop(shop.sliderFinbalPosition, -50, 0);
+		shop.dragAndDrop(shop.sliderFinalPosition, -50, 0);
 		
 	}
 	

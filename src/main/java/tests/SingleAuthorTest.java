@@ -23,17 +23,10 @@ public class SingleAuthorTest extends BaseTest{
 		menu.navigateTo(menu.singleAuthorLink);
 		
 		SingleAuthorPage author = new SingleAuthorPage(driver);		
-		
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		wait.until(ExpectedConditions.textToBePresentInElementLocated(By.cssSelector("div[class ='sc_skills_item sc_skills_style_1 odd first inited']>div>div"), "95"));
-		wait.until(ExpectedConditions.textToBePresentInElementLocated(By.cssSelector("div[class ='sc_skills_item sc_skills_style_1 even inited']>div>div"), "75"));
-		wait.until(ExpectedConditions.textToBePresentInElementLocated(By.cssSelector("div[class ='sc_skills_item sc_skills_style_1 odd inited']>div>div"), "82"));
-		
-		assertTrue(author.dramaSkill());
-		assertTrue(author.biography());
-		assertTrue(author.cookbooks());
-		
-	}
-	
+			
+		assertTrue(author.checkSkill(author.drama, "95"));
+        assertTrue(author.checkSkill(author.biography, "75"));
+        assertTrue(author.checkSkill(author.cookbooks, "82"));
+	}	
 
 }

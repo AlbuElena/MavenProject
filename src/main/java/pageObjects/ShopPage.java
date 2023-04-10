@@ -1,8 +1,6 @@
 package pageObjects;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.By.ByCssSelector;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -18,12 +16,14 @@ public class ShopPage {
 
 	public By dropdown = By.name("orderby");
 	public By sliderinitialPosition = By.cssSelector("span[style = 'left: 0%;']");
-	public By sliderFinbalPosition = By.cssSelector("span[style = 'left: 100%;']");
+	public By sliderFinalPosition = By.cssSelector("span[style = 'left: 100%;']");
+	public By booksByPrice = By.cssSelector("li[class *= 'column-1_4'] bdi");
 	
 	public void dragAndDrop(By locator, int x, int y) {
 		WebElement element = driver.findElement(locator);
 		Actions action = new Actions(driver);
 		action.dragAndDropBy(element, x, y).perform();//metoda perform tb mereu sa fie la final
+	
 		
 		//lantul de actiuni pe care il face dragAndDrop:
 		//action.clickAndHold().moveByOffset(x, y).release().perform();

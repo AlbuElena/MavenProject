@@ -26,6 +26,7 @@ public class MenuPage {
 	public By singleAuthorLink = By.linkText("SINGLE AUTHOR");
 	public By searchField = By.cssSelector("button[title = 'Open search']");
 	public By shopLink = By.linkText("BOOKS");
+	
 	public By addresses = By.cssSelector("li[class *= 'address']>a");
 	public By shippingAddress = By.cssSelector("a[href *= 'shipping']");
 	
@@ -36,6 +37,15 @@ public class MenuPage {
 	public By logoutButton = By.cssSelector("li[class = 'menu_user_logout']>a");
 	public By blogLink = By.linkText("BLOG");
 	public By postFormatsLink = By.linkText("Post Formats");
+	
+	public By TheForestlink = By.cssSelector("div[id = 'sc_tab_1456822345_1_17'] a[href='the-forest']");
+	public By TheSonLink = By.cssSelector("div[id = 'sc_tab_1456822345_1_17'] a[href='the-son']");
+	public By LifeInTheGardenLink = By.cssSelector("div[id = 'sc_tab_1456822345_1_17'] a[href='life-in-the-garden']");
+	public By TheLongRoadLink = By.cssSelector("div[id = 'sc_tab_1456822345_1_17'] a[href='the-long-road-to-the-deep-silence']");
+	public By StrangeStoryLink = By.cssSelector("div[id = 'sc_tab_1456822345_1_17'] a[href='its-a-really-strange-story']");
+	public By StormLink = By.cssSelector("div[id = 'sc_tab_1456822345_1_17'] a[href='storm']"); 	
+	
+	
 	
 
 	
