@@ -18,6 +18,9 @@ public class ShopPage {
 	public By sliderinitialPosition = By.cssSelector("span[style = 'left: 0%;']");
 	public By sliderFinalPosition = By.cssSelector("span[style = 'left: 100%;']");
 	public By booksByPrice = By.cssSelector("li[class *= 'column-1_4'] bdi");
+	public By cheaperBook = By.cssSelector("span[class = 'price'] ins>span");
+	public By expensiveBook = By.cssSelector("li[class *= '254'] bdi");
+	
 	
 	public By addToCartButton = By.linkText("ADD TO CART");
 
@@ -61,6 +64,10 @@ public class ShopPage {
 		WebElement orderDropdown = driver.findElement(dropdown);
 		Select selectObj = new Select(orderDropdown); 
 		selectObj.selectByVisibleText(text);		
+	}
+	
+	public String bookPrice (By locator) {
+		return driver.findElement(locator).getText().replace("$", "") ; 
 	}
 	
 	
