@@ -13,6 +13,8 @@ public class PostFormatsPage {
 	
 	public By audioPost = By.cssSelector("h4[class = 'post_title']> a[href = 'https://keybooks.ro/2016/02/02/audio-post/']");
 	public By searchField = By.cssSelector("input[title = 'Search for:']");
+	public By galleryElement = By.cssSelector("h4[class = 'post_title'] a[href = 'https://keybooks.ro/2016/02/01/gallery-format/']");
+
 	
 
 	
