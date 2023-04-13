@@ -23,7 +23,7 @@ public class Homework2Curs14 extends BaseTest{
 		
 		audioMenu.clickTo(audioMenu.musicPlayButton);
 		driver.findElement(audioMenu.musicSlider);
-		audioMenu.dragAndDrop(audioMenu.musicSlider, 200, 0); // nu stiu de ce eu nu prea vad mutarea sliderului
+		audioMenu.dragAndDrop(audioMenu.musicSlider, 200, 0); 
 		audioMenu.dragAndDrop(audioMenu.volumeSlider, -50, 0);
 	}
 

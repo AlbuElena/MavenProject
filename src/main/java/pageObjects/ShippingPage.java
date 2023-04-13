@@ -29,7 +29,7 @@ public class ShippingPage {
 		selectObj.selectByIndex(index);		
 	}
 	
-	public boolean countryCanadaIsDisplayed() {
+	public boolean countryIsDisplayed() {
 		return driver.findElement(countryCanadaDisplayed).isDisplayed();		
 	}
 	
@@ -45,7 +45,7 @@ public class ShippingPage {
 		js.executeScript("arguments[0].scrollIntoView();", element);
 	}
 //	*/
-	public boolean provinceNLIsDisplayed() {
+	public boolean provinceIsDisplayed() {
 		return driver.findElement(provinceNLDisplayed).isDisplayed();		
 	}
 }

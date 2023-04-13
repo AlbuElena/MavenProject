@@ -14,8 +14,9 @@ public class AudioPostPage {
 	}
 	
 	public By musicPlayButton = By.cssSelector("div[class *= 'mejs-play']");	
-	public By musicSlider = By.cssSelector("span[class ='mejs-time-handle']");
+	public By musicSlider = By.cssSelector("span[class*='mejs-time-slider']");
 	public By volumeSlider = By.cssSelector("a[class = 'mejs-horizontal-volume-slider']");
+
 	
 	
 	public void clickTo(By locator) {
