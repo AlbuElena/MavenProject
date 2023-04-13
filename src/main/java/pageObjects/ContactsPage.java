@@ -12,6 +12,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import utils.Log;
+
 public class ContactsPage {
 	
 	public WebDriver driver;
@@ -47,7 +49,9 @@ public class ContactsPage {
 	}
 	
 	public void zoomMap(By locator) {
+		Log.info("Called method <ZoomMap>");
 		WebElement iFrame = driver.findElement(iframe);
+		Log.info("Called locator " + locator);
 		driver.switchTo().frame(iFrame);
 		driver.findElement(locator).click();		
 	}

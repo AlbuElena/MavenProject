@@ -2,12 +2,15 @@ package tests;
 
 import static org.testng.Assert.assertEquals;
 
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import pageObjects.MenuPage;
 import pageObjects.ShopPage;
-import utils.BaseTest;
+import utils.*;
 
+
+@Listeners(TestNgListener.class)
 public class DropdownExample extends BaseTest {
 	
 	@Test
@@ -20,7 +23,7 @@ public class DropdownExample extends BaseTest {
 		assertEquals(shop.getSelectedOption(), "Sort by price: low to high");
 	}
 	
-	//@Test
+	@Test
 	public void selectByIndex() {
 		MenuPage menu = new MenuPage(driver);
 		ShopPage shop = new ShopPage(driver);
@@ -32,7 +35,7 @@ public class DropdownExample extends BaseTest {
 	}
 	
 	
-	//@Test
+	@Test
 	public void selectByVisibleText() {
 		MenuPage menu = new MenuPage(driver);
 		ShopPage shop = new ShopPage(driver);
