@@ -22,6 +22,7 @@ public class LoginTest extends BaseTest {
 		
 		LoginPage login = new LoginPage(driver);
 		login.loginInApp(username, password);
+		//login.loginInApp("TestUser", "12345%67890");  -- asa era inainte de @Parameters
 		
 		assertTrue(login.successMsgisDisplayed());
 	}
