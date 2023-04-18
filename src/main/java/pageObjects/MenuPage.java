@@ -26,9 +26,10 @@ public class MenuPage {
 	//locatori pt ex1,2,3 din tema:
 	public By homePage = By.linkText("HOME");
 	public By singleAuthorLink = By.linkText("SINGLE AUTHOR");
+	public By booksLink = By.xpath("//li[@id = 'menu-item-262']/a");
 	public By searchField = By.cssSelector("button[title = 'Open search']");
 	public By searchIcon = By.cssSelector("button[class*='search_submit']");
-	public By searchField2 =  By.cssSelector("input[class='search_field']");
+	public By searchField2 =  By.cssSelector("input[class='search_field']"); // curs 
 	
 	
 	public By shopLink = By.linkText("BOOKS");
@@ -43,6 +44,9 @@ public class MenuPage {
 	public By logoutButton = By.cssSelector("li[class = 'menu_user_logout']>a");
 	public By blogLink = By.linkText("BLOG");
 	public By postFormatsLink = By.linkText("Post Formats");
+	
+	public By classicLink = By.xpath("//a[@href='https://keybooks.ro/category/classic/']");
+	public By theWickedKingpopup = By.xpath("//h6[@class = 'post_title']/a[@href = 'https://keybooks.ro/shop/the-wicked-king/']");
 	
 	
 	//driver.findElement(By.linkText("Login")).click();
@@ -81,6 +85,15 @@ public class MenuPage {
 	}
 	
 	public void selectShippingAddress(By locator) {
+		driver.findElement(locator).click();
+	}
+	
+	public void searchBy (String text) {
+		driver.findElement(searchIcon).click();
+		driver.findElement(searchField2).sendKeys(text);
+	}
+	
+	public void click (By locator) {
 		driver.findElement(locator).click();
 	}
 			

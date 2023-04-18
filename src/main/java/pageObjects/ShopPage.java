@@ -20,6 +20,7 @@ public class ShopPage {
 	public By booksByPrice = By.cssSelector("li[class *= 'column-1_4'] bdi");
 	public By cheaperBook = By.cssSelector("span[class = 'price'] ins>span");
 	public By expensiveBook = By.cssSelector("li[class *= '254'] bdi");
+	public By cookingWithLoveBook = By.xpath("//a[contains(text(), 'Cooking')]");
 	
 	
 	public By addToCartButton = By.linkText("ADD TO CART");
@@ -70,7 +71,9 @@ public class ShopPage {
 		return driver.findElement(locator).getText().replace("$", "") ; 
 	}
 	
-	
+	public void clickTheBook(By locator) {
+		driver.findElement(locator).click();
+	}
 	
 			
 }
